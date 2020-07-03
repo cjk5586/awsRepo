@@ -10,7 +10,7 @@ public class FirstPjtApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(FirstPjtApplication.class, args);
 	}
-	@RequestMapping(path="")
+	@RequestMapping("/cicd")
 	public String test() {
 		return "2nd test";
 	}
