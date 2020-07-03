@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8086
 
 # The application's jar file
-ARG JAR_FILE=build/libs/firstPjt.jar
+ARG JAR_FILE=build/libs/firstPjt-0.01.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} firstPjt.jar
+ADD ${JAR_FILE} firstPjt-0.01.jar
 
 # Run the jar file
-ENTRYPOINT ["java", "-jar", "/firstPjt.jar"]
+ENTRYPOINT ["java", "-jar", "/firstPjt-0.01.jar"]
