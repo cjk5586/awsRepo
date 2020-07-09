@@ -18,7 +18,16 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
+archivesBaseName = 'springboot-deploy'
 
+tasks.jar {
+    enabled = false
+}
+
+tasks.bootJar {
+    enabled = true
+    mainClassName = "com.example.demo.FirstPjtApplication"
+}
 test {
 	useJUnitPlatform()
 }
